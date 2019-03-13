@@ -15,8 +15,8 @@ const decamelize = function (text, separator) {
 		// TODO: Use this instead of `xregexp` when targeting Node.js 10:
 		// .replace(/([\p{Lowercase_Letter}\d])(\p{Uppercase_Letter})/gu, `$1${separator}$2`)
 		// .replace(/(\p{Lowercase_Letter}+)(\p{Uppercase_Letter}[\p{Lowercase_Letter}\d]+)/gu, `$1${separator}$2`)
-		.replace(regex1, `$1${separator}$2`)
-		.replace(regex2, `$1${separator}$2`)
+		.replace(regex1, '$1' + separator + '$2')
+		.replace(regex2, '$1' + separator + '$2')
 		.toLowerCase();
 };
 
