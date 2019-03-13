@@ -1,7 +1,7 @@
 'use strict';
 const xRegExp = require('xregexp');
 
-const decamelize = (text, separator) => {
+const decamelize = function (text, separator) {
 	if (typeof text !== 'string') {
 		throw new TypeError('Expected a string');
 	}
